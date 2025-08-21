@@ -1,0 +1,52 @@
+body{
+    text-align: center;
+}
+
+#div1, #div2{
+    width: 45%
+}
+
+#div1{
+     float:left;
+}
+
+#div2{
+     float:right;
+}
+
+#div3{
+   
+width: 100%;
+text-align: right;
+margin-top: 60%;
+margin-bottom: 20px;
+}
+
+h3{
+    font-weight: 500px;
+}
+
+li{
+    font-weight: 300px;
+}
+
+#div1{
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#div2{
+    border: 1px dashed red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style-type: upper-roman;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
