@@ -1,0 +1,32 @@
+body{
+    background-color: #5462E0;
+    text-align: center;
+}
+.photo{
+   width: 200px;
+}
+
+#color{
+    width: 800px;
+}
+
+h1{
+    font-family:'Trebuchet MS';
+    color: #E0C153;
+}
+
+p{
+    font-family:Impact;
+    color: #36342A;
+    background-color: #8B8262;
+    display: inline-block;
+}
+
+button{
+    font-family:Impact;
+    color: #5462E0;
+    background-color: #E0C153;
+    display: inline-block;
+    border-radius: 8px;
+}
+
