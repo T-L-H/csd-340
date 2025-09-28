@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <meta name="description" content="CSS Assignment">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Bellevue">
+    <meta name="author" content="Tevyah Hanley">
+    <meta name="robots" content="nofollow">
+    <link rel="stylesheet" href="Hanley_Mod2_2.css">
+
+    <script>
+       function turnToNight(){
+        document.getElementById("image1").style.filter = "invert(100%)"
+       } 
+        function turnToDay(){
+        document.getElementById("image2").style.filter = "invert(100%)"
+       } 
+    </script>
+</head>
+
+<body>
+<div id="container">
+</div>
+<h1>Assignment 10.3: JavaScript - Part 2</h1>
+<p>Click the images to turn these scenes into nighttime!</p>
+<img src="1.jpg" id="image1" onclick="turnToNight()">
+<br>
+<img src="2.jpg" id="image2" onclick="turnToDay()">
+</body>
+
+</html>
