@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <meta name="description" content="CSS Assignment">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Bellevue">
+    <meta name="author" content="Tevyah Hanley">
+    <meta name="robots" content="nofollow">
+    <link rel="stylesheet" href="Hanley_Mod2_2.css">
+
+    <script>
+        let arr = [];
+
+    function addmyItem() {
+      let val = document.getElementById("typeBox").value;
+      if (val.trim() !== "") {
+        arr.push(val);
+        alert("You added '" + val + "' and it is at position " + arr.length);
+        document.getElementById("typeBox").value = "";
+      }
+    }
+
+    function getRidOfItem() {
+      if (arr.length > 0) {
+        arr.pop();
+        alert("Last entry has been deleted...");
+      } else {
+        alert("Array is empty...");
+      }
+    }
+
+    function ShowMyItems() {
+      let showMyStuff = "";
+      for (let i = 0; i < arr.length; i++) {
+        showMyStuff += "Item " + (i + 1) + " = " + arr[i] + "<br>";
+      }
+      document.getElementById("showMyStuff").innerHTML = showMyStuff;
+    }
+    </script>
+</head>
+
+<body>
+
+<h1>Assignment 11.2: JavaScript - Part 3</h1>
+ <input type="text" id="typeBox">
+  <button onclick="addmyItem()">Add</button>
+  <button onclick="getRidOfItem()">Delete Last Entry</button>
+  <button onclick="ShowMyItems()">Display</button>
+  <div id="showMyStuff"></div>
+
+</body>
+
+</html>
