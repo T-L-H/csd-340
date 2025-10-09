@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <meta name="description" content="CSS Assignment">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Bellevue">
+    <meta name="author" content="Tevyah Hanley">
+    <meta name="robots" content="nofollow">
+    <link rel="stylesheet" href="Hanley_Mod12_2.css">
+</head>
+
+<body>
+<h1>Assignment 12.2: JavaScript - Part 4</h1>
+<div id="container">
+</div>
+<div id="div1">
+<h3>Top 10 Favorite Books</h3>
+<!-- Added buttons as mentioned -->
+<button onclick="topToBottom()">Top to Bottom</button>
+<button onclick="bottomToTop()">Bottom to Top</button>
+<hr>
+<!-- Added display area for the JavaScript wording -->
+<div id="bookList"></div>
+
+</div>
+
+<div id="div2">
+<h3>5 Things I’ve Learned Since the Course Started</h3>
+<ul>
+    <li>Website Design</li>
+    <li>Correct Formatting</li>
+    <li>Stylesheet Linking</li>
+    <li>Github Formatting</li>
+    <li>Titles in HTML</li>
+</ul>
+</div>
+
+<div id="div3">
+<a href="../index.html">back to Landing Page</a>
+</div>
+
+<!-- Internal documentation and JavaScript section -->
+<script>
+
+// Array as mentioned in Javascript
+const mybooktitles = [
+    "The Lost Hero",
+    "The Son Of Neptune",
+    "The Mark of Athena",
+    "The House of Hades",
+    "The Blood of Olympus",
+    "Catching Fire",
+    "Mockingjay",
+    "The Hunger Games",
+    "To Kill a Mockingbird",
+    "The Giver"
+];
+
+// Function to display books from top to bottom using innerHTML
+function topToBottom() {
+    document.getElementById("bookList").innerHTML = mybooktitles.join("<br>");
+}
+
+// Function to display books from bottom to top 
+function bottomToTop() {
+    document.getElementById("bookList").innerHTML = mybooktitles.slice().reverse().join("<br>");
+}
+</script>
+
+</address>
+</body>
+
+</html>
